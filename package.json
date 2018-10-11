@@ -1,0 +1,23 @@
+{
+  "name": "vue-plaid-link",
+  "version": "0.1.0",
+  "description": "A Vue.js component for Plaid Link",
+  "main": "PlaidLink.vue",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyrusstoller/vue-plaid-link.git"
+  },
+  "keywords": [
+    "VueJs",
+    "Plaid",
+    "Fintech"
+  ],
+  "author": "cyrus.stoller@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cyrusstoller/vue-plaid-link/issues"
+  },
+  "homepage": "https://github.com/cyrusstoller/vue-plaid-link#readme"
+}
