@@ -3,8 +3,9 @@
 This package helps you to jump start the process of building a Vue.js application
 that interacts with [Plaid](https://plaid.com).
 
-To learn more about how to get started, check out the
-[Plaid quickstart guide](https://plaid.com/docs/quickstart/).
+After you [sign up for your API keys](https://dashboard.plaid.com/signup),
+follow the instructions below. If you want to learn more, check out the [Plaid
+API documentation](https://plaid.com/docs).
 
 ## Installation
 
@@ -61,7 +62,7 @@ export default {
 
 ## Example
 
-I have included an [example](https://github.com/cyrusstoller/vue-plaid-link/tree/master/example)
+We have included an [example](https://github.com/cyrusstoller/vue-plaid-link/tree/master/example)
 vue application that you can use to see how things work.
 
 ## Contributing
