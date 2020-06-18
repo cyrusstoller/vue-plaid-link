@@ -12,7 +12,7 @@
     "eslint": "^7.2.0",
     "eslint-plugin-vue": "^6.2.2",
     "vue": "^2.6.11",
-    "vue-plaid-link": "file:.."
+    "vue-plaid-link2": "file:.."
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.4.4",

@@ -12,13 +12,13 @@ API documentation](https://plaid.com/docs).
 ### npm
 
 ```
-npm install --save vue-plaid-link
+npm install --save vue-plaid-link2
 ```
 
 ### yarn
 
 ```
-yarn add vue-plaid-link
+yarn add vue-plaid-link2
 ```
 
 ## Usage

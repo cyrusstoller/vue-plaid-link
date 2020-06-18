@@ -7930,7 +7930,7 @@ vue-loader@^15.9.2:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
-"vue-plaid-link@file:..":
+"vue-plaid-link2@file:..":
   version "0.1.0"
 
 vue-style-loader@^4.1.0, vue-style-loader@^4.1.2:

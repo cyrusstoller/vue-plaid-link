@@ -18,7 +18,7 @@
 
 <script>
 /* eslint-disable */
-import PlaidLink from 'vue-plaid-link'
+import PlaidLink from 'vue-plaid-link2'
 
 export default {
   name: 'app',
