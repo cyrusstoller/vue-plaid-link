@@ -17,8 +17,23 @@ export default {
         return ['sandbox', 'development', 'production'].indexOf(value) !== -1
       }
     },
-    public_key: String,
+    isWebview: {
+      type: Boolean,
+      required: false
+    },
+    link_token: {
+      type: String,
+      required: false
+    },
+    public_key: {
+      type: String,
+      required: false
+    },
     products: Array,
+    receivedRedirectUri: {
+      type: String,
+      required: false
+    },
     webhook: {
       type: String,
       required: false
@@ -51,8 +66,11 @@ export default {
         this.plaid.create({
           clientName: this.clientName,
           env: this.env,
+          isWebview: this.isWebview,
           key: this.public_key,
           product: this.products,
+          receivedRedirectUri: this.receivedRedirectUri,
+          token: this.link_token,
           // Optional – use webhooks to get transaction and error updates
           webhook: this.webhook,
           onLoad: function() {

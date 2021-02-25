@@ -23,6 +23,10 @@ yarn add vue-plaid-link2
 
 ## Usage
 
+This is based on this [Plaid documentation](https://plaid.com/docs/link/web/).
+This component supports both `link_tokens` and the deprecated `public_key`.
+For clarity, you should only use one or the other, not both.
+
 ```vue
 <script>
 import vue from 'vue';
@@ -46,6 +50,7 @@ export default {
     <PlaidLink
       clientName="APPLICATION NAME"
       env="sandbox"
+      link_token="GENERATED LINK TOKEN"
       public_key="PLAID PUBLIC KEY"
       :products="['auth','transactions']"
       webhook="https://requestb.in"
