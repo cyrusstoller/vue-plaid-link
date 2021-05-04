@@ -54,7 +54,8 @@ export default {
   },
   data() {
     return {
-      plaid: null
+      plaid: null,
+      linkHandler: null
     }
   },
   methods: {
@@ -63,7 +64,12 @@ export default {
 
       let self = this
       if (this.plaid != null) {
-        this.plaid.create({
+        // destroy link handler to prevent stacking of iframes
+        if (this.linkHandler != null) {
+          this.linkHandler.destroy();
+          this.linkHandler = null;
+        }
+        this.linkHandler = this.plaid.create({
           clientName: this.clientName,
           env: this.env,
           isWebview: this.isWebview,
@@ -107,7 +113,8 @@ export default {
             // }
             self.onEvent(eventName, metadata)
           }
-        }).open()
+        });
+        this.linkHandler.open();
       }
     }
   },
