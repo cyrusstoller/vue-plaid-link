@@ -119,6 +119,12 @@ export default {
     }
   },
   mounted() {
+    // Only download the script if not already done
+    if (window.Plaid) {
+      this.plaid = window.Plaid
+      return
+    }
+
     let linkScript = document.createElement('script')
     linkScript.async = true
     linkScript.setAttribute('src', 'https://cdn.plaid.com/link/v2/stable/link-initialize.js')
