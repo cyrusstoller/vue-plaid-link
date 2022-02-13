@@ -30,7 +30,7 @@ For clarity, you should only use one or the other, not both.
 ```vue
 <script>
 import vue from 'vue';
-import PlaidLink from 'vue-plaid-link';
+import PlaidLink from 'vue-plaid-link2';
 
 vue.component('PlaidLink', PlaidLink);
 
